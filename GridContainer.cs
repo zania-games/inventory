@@ -47,12 +47,12 @@ public class GridContainer: MonoBehaviour
     }
 
     /**
-	 * @brief Determines whether an `IGriddable` fits in this container, and can therefore be inserted into it.
-	 * @param item the object of the query
-	 * @param row the row in which the top-left corner of the item is to be placed
-	 * @param col the column in which the top-left corner of the item is to be placed
-	 * @return whether the item fits in this container
-	 */
+     * @brief Determines whether an `IGriddable` fits in this container, and can therefore be inserted into it.
+     * @param item the object of the query
+     * @param row the row in which the top-left corner of the item is to be placed
+     * @param col the column in which the top-left corner of the item is to be placed
+     * @return whether the item fits in this container
+     */
     public bool ItemFits(IGriddable item, int row, int col)
     {
         int rowEnd = row + item.GetNumRows(), colEnd = col + item.GetNumColumns();
@@ -76,14 +76,14 @@ public class GridContainer: MonoBehaviour
     }
 
     /**
-	 * @brief Attempts to insert an IGriddable into this container.
-	 * @param item a non-null pointer to the item to be inserted
-	 * @param row the row in which the top-left corner of the item is to be placed
-	 * @param col the column in which the top-left corner of the item is to be placed
-	 * @return If the item was successfully inserted, returns `InsertOutcome.Success`. If the item is already
+     * @brief Attempts to insert an IGriddable into this container.
+     * @param item a non-null pointer to the item to be inserted
+     * @param row the row in which the top-left corner of the item is to be placed
+     * @param col the column in which the top-left corner of the item is to be placed
+     * @return If the item was successfully inserted, returns `InsertOutcome.Success`. If the item is already
      * contained, returns `InsertOutcome.AlreadyPresent`. If the item is not already contained, but does not fit in
      * the container, returns `InsertOutcome.DoesntFit`.
-	 */
+     */
     public InsertOutcome Insert(IGriddable item, int row, int col)
     {
         if (items.ContainsKey(item))
@@ -99,10 +99,10 @@ public class GridContainer: MonoBehaviour
     }
 
     /**
-	 * @brief Removes an `IGriddable` from this container if it is present.
-	 * @param item a non-null pointer to the item to be removed
-	 * @return whether the item was present, and correspondingly removed
-	 */
+     * @brief Removes an `IGriddable` from this container if it is present.
+     * @param item a non-null pointer to the item to be removed
+     * @return whether the item was present, and correspondingly removed
+     */
     public bool Remove(IGriddable item)
     {
         byte[] location;
