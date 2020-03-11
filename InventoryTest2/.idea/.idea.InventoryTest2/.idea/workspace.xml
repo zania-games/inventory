@@ -13,12 +13,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Utility/SimpleActivatorMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory Scripts/GridContainer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Utility/ForcedReset.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Drag Scripts/DragHandler.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Standard Assets/Utility/ForcedReset.cs" />
         <option value="$PROJECT_DIR$/Assets/Standard Assets/Utility/SimpleActivatorMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Drag Scripts/Slots.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventory Scripts/GridContainer.cs" />
       </list>
     </option>
@@ -70,6 +72,8 @@
       <updated>1583950494540</updated>
       <workItem from="1583950499666" duration="599000" />
       <workItem from="1583954525261" duration="1449000" />
+      <workItem from="1583962006234" duration="6000" />
+      <workItem from="1583963133218" duration="1814000" />
     </task>
     <servers />
   </component>

@@ -53,7 +53,13 @@ public class Slots : MonoBehaviour, IDropHandler
         if (grid1.ItemFits(DragHandler.itemBeingDragged.GetComponent<DragHandler>(), row, col))
         {
             grid1.Insert(DragHandler.itemBeingDragged.GetComponent<DragHandler>(), row, col);
-            
+            for (int i = 0; i < grid1.NumRows; i++)
+            {
+                for (int j = 0; j < grid1.NumColumns; j++)
+                {
+                    Debug.Log($"{i} {j} => {grid1[i,j]}");
+                }
+            }
 
             DragHandler.itemBeingDragged.transform.SetParent(transform);
             grid = GetComponent<GridLayoutGroup>();

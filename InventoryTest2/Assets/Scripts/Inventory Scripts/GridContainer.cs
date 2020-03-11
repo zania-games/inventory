@@ -121,6 +121,8 @@ public class GridContainer: MonoBehaviour
                 for (int j = 0; j < itemCols; ++j)
                     grid[location[0] + i, location[1] + j] = null;
             }
+
+            items.Remove(item);
             return true;
         }
         else
