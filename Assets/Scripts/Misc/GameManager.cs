@@ -5,6 +5,8 @@ public class GameManager: MonoBehaviour
     public GameObject Player;
     public RectTransform Inventory;
     public GameObject UICamera;
+    public Transform PlayerGridPosition;
+    public Transform ContainerGridPosition;
 
     private RectTransform playerItems;
 
@@ -20,7 +22,7 @@ public class GameManager: MonoBehaviour
         UICamera.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        playerItems.SetParent(Inventory, false);
+        playerItems.SetParent(PlayerGridPosition, false);
     }
 
     void Update()
